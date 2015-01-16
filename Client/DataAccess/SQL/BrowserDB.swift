@@ -36,7 +36,7 @@ class BrowserDB {
     }
 
     init?(profile: Profile) {
-        db = FMDatabase(path: FileName) // profile.getFile("browser.db"))
+        db = FMDatabase(path: profile.files.get(FileName))
         if (!db.open()) {
             debug("Could not open database (\(db.lastErrorMessage()))")
             return nil
@@ -81,8 +81,23 @@ class BrowserDB {
     }
 
     private func deleteAndRecreate(profile: Profile) -> Bool {
-        // No op for now
-        return false
+        let date = NSDate()
+        let newFilename = "\(FileName).bak"
+
+        if let file = profile.files.get(newFilename) {
+            if let attrs = NSFileManager.defaultManager().attributesOfItemAtPath(file, error: nil) {
+                if let creationDate = attrs[NSFileCreationDate] as? NSDate {
+                    // If the old backup is less than an hour old, we just give up
+                    let interval = date.timeIntervalSinceDate(creationDate)
+                    if interval < 60*60 {
+                        return false
+                    }
+                }
+            }
+        }
+
+        profile.files.move(FileName, dest: newFilename)
+        return createDB(profile)
     }
 
     func insert<T>(name: String, item: T, inout err: NSError?) -> Int64 {
