@@ -289,6 +289,7 @@
 		0B3342DB1A5CA929000AE428 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		0B3342F71A5CAD94000AE428 /* HistorySqlite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorySqlite.swift; sourceTree = "<group>"; };
 		0B3342F81A5CAD94000AE428 /* HistoryTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTable.swift; sourceTree = "<group>"; };
+		0B3343041A5CADC1000AE428 /* TestHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHistory.swift; sourceTree = "<group>"; };
 		0B9E3DD91A23FBBC008A7877 /* Panels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Panels.swift; sourceTree = "<group>"; };
 		0B9E3DE31A23FBD1008A7877 /* TestPanels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPanels.swift; sourceTree = "<group>"; };
 		0BA896491A250E6500C1010C /* AccountTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTest.swift; sourceTree = "<group>"; };
@@ -625,6 +626,7 @@
 		F84B21D61A090F8100AAB793 /* ClientTests */ = {
 			isa = PBXGroup;
 			children = (
+				0B3343041A5CADC1000AE428 /* TestHistory.swift */,
 				0BA896491A250E6500C1010C /* AccountTest.swift */,
 				F84B21D91A090F8100AAB793 /* ClientTests.swift */,
 				D3FA777A1A43B2990010CD32 /* SearchTests.swift */,
@@ -1163,6 +1165,7 @@
 				D3FA777B1A43B2990010CD32 /* SearchTests.swift in Sources */,
 				0B657B461A3B9CAB005A9E43 /* Favicon.swift in Sources */,
 				D34DC8651A16C49600D49B7B /* Favicons.swift in Sources */,
+				0B3343051A5CADC1000AE428 /* TestHistory.swift in Sources */,
 				0BD19A6D1A2530C80084FBA7 /* ReaderViewController.swift in Sources */,
 				0BD19A641A2530750084FBA7 /* Panels.swift in Sources */,
 				0BD19A6E1A2530CE0084FBA7 /* SettingsViewController.swift in Sources */,
