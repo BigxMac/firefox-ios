@@ -6,7 +6,7 @@
 protocol Table {
     func getName() -> String
     func create(db: FMDatabase, version: UInt32) -> Bool
-    func updateTable(db: FMDatabase, currentVersion: UInt32) -> Bool
+    func updateTable(db: FMDatabase, from: UInt32, to: UInt32) -> Bool
 
     func insert<T>(db: FMDatabase, item: T?, inout err: NSError?) -> Int64
     func update<T>(db: FMDatabase, item: T?, inout err: NSError?) -> Int32
@@ -62,7 +62,7 @@ class BrowserDB {
                         return false
                     }
                 } else {
-                    if !table.1.updateTable(db, currentVersion: version) {
+                    if !table.1.updateTable(db, from: version, to: Version) {
                         // Update failed, give up!
                         db.rollback()
                         return false
