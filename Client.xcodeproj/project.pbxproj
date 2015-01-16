@@ -287,6 +287,7 @@
 		0B3343021A5CADA2000AE428 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = History.swift; path = Client/DataAccess/History.swift; sourceTree = "<group>"; };
 		0B3342CC1A5CA893000AE428 /* BrowserDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserDB.swift; sourceTree = "<group>"; };
 		0B3342DB1A5CA929000AE428 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		0B3342F71A5CAD94000AE428 /* HistorySqlite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorySqlite.swift; sourceTree = "<group>"; };
 		0B9E3DD91A23FBBC008A7877 /* Panels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Panels.swift; sourceTree = "<group>"; };
 		0B9E3DE31A23FBD1008A7877 /* TestPanels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPanels.swift; sourceTree = "<group>"; };
 		0BA896491A250E6500C1010C /* AccountTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTest.swift; sourceTree = "<group>"; };
@@ -429,6 +430,7 @@
 		0B3342CB1A5CA893000AE428 /* SQL */ = {
 			isa = PBXGroup;
 			children = (
+				0B3342F71A5CAD94000AE428 /* HistorySqlite.swift */,
 				0B3342CC1A5CA893000AE428 /* BrowserDB.swift */,
 			);
 			name = SQL;
@@ -1174,6 +1176,7 @@
 				0BD19A6A1A2530BB0084FBA7 /* HistoryViewController.swift in Sources */,
 				0BD19A5F1A2530320084FBA7 /* TabBarViewController.swift in Sources */,
 				28C0779E1A3B066000834FE5 /* RecordTests.swift in Sources */,
+				0B3343091A5CADD5000AE428 /* HistorySqlite.swift in Sources */,
 				0BE1083A1A1B1ED200D4B712 /* Locking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1203,6 +1206,7 @@
 				0BE00DC31A5DE1CE0081E374 /* FileAccessor.swift in Sources */,
 				0B79B17F1A3F6DD500DBECB3 /* Favicons.swift in Sources */,
 				D35179C01A5C8D6700E7622E /* OpenSearch.swift in Sources */,
+				0B33430B1A5CADD6000AE428 /* HistorySqlite.swift in Sources */,
 				E418D0DB1A251B3200CAE47A /* BookmarksREST.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1220,6 +1224,7 @@
 				E42CCDEB1A23A76200B794D3 /* BookmarksREST.swift in Sources */,
 				E42CCDE91A23A74000B794D3 /* AccountManager.swift in Sources */,
 				0B33431B1A5CB14B000AE428 /* Cursor.swift in Sources */,
+				0B33430D1A5CADD7000AE428 /* HistorySqlite.swift in Sources */,
 				E42CCDE81A23A73D00B794D3 /* Profile.swift in Sources */,
 				E42CCDEC1A23A76400B794D3 /* Cursor.swift in Sources */,
 				0B3342D71A5CA89E000AE428 /* BrowserDB.swift in Sources */,
